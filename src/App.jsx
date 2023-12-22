@@ -1,9 +1,10 @@
 import './App.css'
+import PractiseRequests from "./pages/PractiseRequests.jsx";
 
 function App() {
   return (
     <>
-      <h1>Programmeer hier jouw applicatie</h1>
+      <PractiseRequests/>
     </>
   )
 }
