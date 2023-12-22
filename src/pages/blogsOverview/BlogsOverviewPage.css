@@ -1,0 +1,25 @@
+.blog_list_wrapper {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.blog_wrapper {
+    background-color: var(--color-secondary);
+    border: solid var(--color-tertiary);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 450px;
+}
+
+.blog_link:link {
+    color: var(--color-primary);
+}
+
+.blog_link:visited {
+    color: var(--color-primary);
+}
