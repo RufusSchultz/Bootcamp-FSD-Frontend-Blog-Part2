@@ -1,5 +1,4 @@
 import "./BlogsOverviewPage.css";
-// import posts from "../../constants/data.json";
 import BlogListItem from "../../components/BlogListItem.jsx";
 import {useEffect, useState} from "react";
 import axios from "axios";
@@ -26,7 +25,6 @@ function BlogsOverviewPage() {
     }, []);
 
     return (<div className="page-container">
-            <div className="inner-container">
                 {posts.length > 0 && <div className="inner-container">
                     <h1>Bekijk alle {posts.length} posts op het platform</h1>
                     <ul className="blog_list_wrapper">
@@ -46,8 +44,6 @@ function BlogsOverviewPage() {
                 {posts.length === 0 && <div className="inner-container">
                     <h2>{errorMessage}</h2>
                 </div>}
-            </div>
-
         </div>
 
     )
