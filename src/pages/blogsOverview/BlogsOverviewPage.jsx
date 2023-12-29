@@ -42,7 +42,7 @@ function BlogsOverviewPage() {
                     </ul>
                 </div>}
                 {posts.length === 0 && <div className="inner-container">
-                    <h2>{errorMessage}</h2>
+                    <h2 className="error_message">{errorMessage}</h2>
                 </div>}
         </div>
 

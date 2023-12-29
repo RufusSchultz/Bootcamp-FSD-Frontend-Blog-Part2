@@ -28,8 +28,19 @@
     outline-color: var(--color-primary);
 }
 
-
-.validation_error {
+.error {
     color: red;
     font-size: 1.2rem;
+}
+
+.succes_text {
+    margin-top: calc(50vh - var(--height-header));
+}
+
+.succes_link:visited {
+    color: var(--color-primary);
+}
+
+.succes_link:link {
+    color: var(--color-primary);
 }

@@ -23,3 +23,7 @@
 .blog_link:visited {
     color: var(--color-primary);
 }
+
+.error_message {
+    margin-top: calc(50vh - var(--height-header));
+}
