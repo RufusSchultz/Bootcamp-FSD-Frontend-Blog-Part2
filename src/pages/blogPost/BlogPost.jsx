@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 
 function BlogPost() {
-    const [postInfo, setPostInfo] = useState({});
+    const [postInfo, setPostInfo] = useState();
     const [errorMessage, setErrorMessage] = useState("");
     const [deleteMessage, setDeleteMessage] = useState("");
     const { postId } = useParams();
