@@ -36,10 +36,10 @@ function BlogPost() {
 
     return (
         <div className="page-container">
-            {deleteMessage.length === 0 && Object.keys(postInfo).length === 0 && <div className="inner-container">
+            {deleteMessage.length === 0 && postInfo && <div className="inner-container">
                 <h2 className="message">{errorMessage}</h2>
             </div>}
-            {deleteMessage.length === 0 && Object.keys(postInfo).length > 0 && <div className="inner-container">
+            {deleteMessage.length === 0 && postInfo && <div className="inner-container">
                 <article>
                     <h2>{postInfo.title} ({postInfo.readTime} minuten)</h2>
                     <h3>{postInfo.subtitle}</h3>
