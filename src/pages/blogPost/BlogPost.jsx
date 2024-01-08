@@ -36,7 +36,7 @@ function BlogPost() {
 
     return (
         <div className="page-container">
-            {deleteMessage.length === 0 && postInfo && <div className="inner-container">
+            {deleteMessage.length === 0 && !postInfo && <div className="inner-container">
                 <h2 className="message">{errorMessage}</h2>
             </div>}
             {deleteMessage.length === 0 && postInfo && <div className="inner-container">
