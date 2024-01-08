@@ -11,9 +11,7 @@ function BlogsOverviewPage() {
         async function fetchPosts() {
             try {
                 const results = await axios.get("http://localhost:3000/posts");
-                const result = results.data.map((result) => {
-                    return result
-                });
+                const result = results.data;
                 setPosts(result);
             } catch (e) {
                 console.error(e);
